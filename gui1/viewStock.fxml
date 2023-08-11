@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../common/buttons.CSS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.viewStockController">
+   <children>
+      <Text layoutX="74.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Product Name" wrappingWidth="181.572998046875">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font></Text>
+      <TextField fx:id="txtProductName" layoutX="265.0" layoutY="291.0" promptText="Insert product name" />
+      <Text layoutX="74.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Amount">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font></Text>
+      <TextField fx:id="txtAmount" layoutX="265.0" layoutY="324.0" promptText="Amount" />
+      <Button fx:id="updateBtn" layoutX="449.0" layoutY="331.0" mnemonicParsing="false" onAction="#ClickUpdateBtn" stylesheets="@../common/buttons.CSS" text="Update" />
+      <Button fx:id="BackBtn" layoutX="10.0" layoutY="357.0" mnemonicParsing="false" onAction="#ClickBtn" stylesheets="@../common/buttons.CSS" text="Back" />
+      <TableView fx:id="tblStockProduct" layoutX="73.0" layoutY="121.0" prefHeight="158.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="col_bamba" prefWidth="75.0" text="Bamba" />
+            <TableColumn fx:id="col_klik" prefWidth="75.0" text="Klik" />
+            <TableColumn fx:id="col_cocaCola" prefWidth="108.80006408691406" text="CocaCola" />
+            <TableColumn fx:id="col_sevenUp" prefWidth="92.79998779296875" text="SevenUp" />
+            <TableColumn fx:id="col_katkatat" prefWidth="102.4000244140625" text="Katkatat" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblProductNotFound" layoutX="449.0" layoutY="360.0" prefHeight="18.0" prefWidth="150.0" />
+      <AnchorPane layoutX="-2.0" layoutY="-7.0" prefHeight="87.0" prefWidth="610.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="77.0" layoutX="265.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#e77000" layoutX="225.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Stock">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
