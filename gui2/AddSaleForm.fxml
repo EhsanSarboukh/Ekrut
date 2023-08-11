@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddSaleFormController">
+   <children>
+      <Text layoutX="74.0" layoutY="183.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Product Name : ">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></Text>
+      <Text layoutX="57.0" layoutY="239.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Discount :">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></Text>
+      <TextField fx:id="txtName" layoutX="266.0" layoutY="165.0" onAction="#start" prefHeight="27.0" prefWidth="123.0" promptText="ID" style="-fx-border-color: #e1cc8e;" />
+      <TextField fx:id="txtDiscount" layoutX="201.0" layoutY="222.0" onAction="#start" prefHeight="27.0" prefWidth="106.0" promptText="Discount" style="-fx-border-color: #e1cc8e;" />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="352.0" mnemonicParsing="false" onAction="#ClickBack" style="-fx-background-color: #e1cc8e;" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Button fx:id="btnAdd" layoutX="299.0" layoutY="261.0" mnemonicParsing="false" onAction="#ClickAdd" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #e1cc8e;" stylesheets="@../common/buttons.CSS" text="Add">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></Button>
+      <AnchorPane prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="70.0" layoutX="266.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#e77000" layoutX="108.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A new SALE is coming a head " textAlignment="CENTER" wrappingWidth="382.9605712890625">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="174.0" fitWidth="210.0" layoutX="402.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Sales1-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="22.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Area :">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtArea" layoutX="108.0" layoutY="279.0" promptText="Area" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ShowMonthlyOrderReportController">
+   <children>
+      <TextArea fx:id="ReportTextArea" layoutX="101.0" layoutY="200.0" prefHeight="155.0" prefWidth="443.0" style="-fx-border-color: #e77000;">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></TextArea>
+      <Text layoutX="263.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Approved:">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Canceled:">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profits:" wrappingWidth="69.2890625">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders Details :" underline="true">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font></Text>
+      <Button fx:id="backBtn" layoutX="8.0" layoutY="361.0" mnemonicParsing="false" onAction="#ClickBack" stylesheets="@../common/buttons.CSS" text="Back" />
+      <AnchorPane layoutY="-1.0" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@OLP-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="85.0" layoutX="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblApproved" layoutX="360.0" layoutY="129.0" text="Label">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Label>
+      <Label fx:id="lblCancel" layoutX="180.0" layoutY="129.0" text="Label">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Label>
+      <Label fx:id="lblProfit" layoutX="180.0" layoutY="160.0" text="Label">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Label>
+      <ImageView fitHeight="82.0" fitWidth="116.0" layoutX="499.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@reports-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="txtnorth" fill="#e77000" layoutX="129.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="North Order Monthly Report" wrappingWidth="341.336669921875">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtUae" fill="#e77000" layoutX="151.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UAE Order Monthly Report" wrappingWidth="341.336669921875">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtSouth" fill="#e77000" layoutX="117.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="South Order Monthly Report" wrappingWidth="341.336669921875">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="259.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting For Delivery :">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblWaitingForDelivery" layoutX="424.0" layoutY="161.0" prefHeight="17.0" prefWidth="39.0" text="Label" />
+   </children>
+</AnchorPane>

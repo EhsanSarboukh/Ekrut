@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../common/buttons.CSS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RemoteOrderViaDroneFormController">
+   <children>
+      <Text fill="#e77000" layoutX="169.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remote Order Via Drone">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font></Text>
+      <Text layoutX="80.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+      <TextField fx:id="txtAddress" layoutX="175.0" layoutY="150.0" promptText="Address" style="-fx-border-color: #e77000;" />
+      <Button fx:id="btnMakeOrder" layoutX="245.0" layoutY="269.0" mnemonicParsing="false" onAction="#ClickMakeOrder" stylesheets="@../common/buttons.CSS" text="Make Order" />
+      <Text layoutX="81.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Area">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+      <Text layoutX="76.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Id">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+      <ComboBox fx:id="Area" layoutX="176.0" layoutY="187.0" onAction="#ChooseArea" prefWidth="150.0" promptText="Area" style="-fx-border-color: #e77000; -fx-font-family: georgia;" />
+      <ComboBox fx:id="deviceId" layoutX="176.0" layoutY="225.0" onAction="#ChooseDevice" prefWidth="150.0" promptText="deviceId" style="-fx-border-color: #e77000; -fx-font-family: georgia;" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#ClickBack" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Label fx:id="lblChoose" layoutX="14.0" layoutY="309.0" prefHeight="18.0" prefWidth="403.0" textFill="#d72f2f">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font></Label>
+      <AnchorPane layoutX="-2.0" layoutY="-6.0" prefHeight="90.0" prefWidth="606.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="76.0" layoutX="274.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="234.0" fitWidth="234.0" layoutX="358.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@drone.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

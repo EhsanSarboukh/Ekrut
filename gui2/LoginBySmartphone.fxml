@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.loginBySpmatphoneController">
+   <children>
+      <Text layoutX="34.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert ID:" wrappingWidth="78.3984375">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtID" layoutX="130.0" layoutY="176.0" promptText="ID" style="-fx-border-color: #e1cc8e;" />
+      <Button fx:id="LoginBySmartphoneButton" layoutX="255.0" layoutY="218.0" mnemonicParsing="false" onAction="#clickLogin" stylesheets="@../common/buttons.CSS" text="Log in" />
+      <Button fx:id="BackBtn" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#BackBtnOnAction" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Label fx:id="LoginMessageLabel" layoutX="206.0" layoutY="121.0" prefHeight="33.0" prefWidth="139.0" textFill="#ef0808" />
+      <AnchorPane layoutX="-5.0" prefHeight="103.0" prefWidth="572.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="105.0" layoutX="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#e77000" layoutX="151.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Via Smartphone">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="209.0" fitWidth="182.0" layoutX="387.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@loginBySmartphone-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="861.0" stylesheets="@../../common/buttons.CSS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CreateOrderFormController">
+   <children>
+      <Text fill="#e77000" layoutX="287.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Order" wrappingWidth="223.128173828125">
+         <font>
+            <Font name="Georgia" size="35.0" />
+         </font></Text>
+      <TableView fx:id="tblProducts" layoutX="14.0" layoutY="178.0" prefHeight="206.0" prefWidth="452.0" style="-fx-font-family: Georgia; -fx-border-color: #e77000;">
+        <columns>
+          <TableColumn fx:id="col_Name" prefWidth="87.20001220703125" text="Name" />
+            <TableColumn fx:id="col_Price" prefWidth="79.19998168945312" text="Price" />
+            <TableColumn fx:id="col_Amount" prefWidth="87.99998474121094" text="Amount" />
+            <TableColumn fx:id="col_Sale" prefWidth="76.79998779296875" text="Sale" />
+            <TableColumn fx:id="col_PriceAfterSale" prefWidth="128.0" text="Price After Sale" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnViewOrder" layoutX="690.0" layoutY="421.0" mnemonicParsing="false" onAction="#ClickViewOrder" stylesheets="@../common/buttons.CSS" text="View order" />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="421.0" mnemonicParsing="false" onAction="#ClickBack" prefHeight="26.0" prefWidth="61.0" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Text layoutX="14.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Catalog:">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font></Text>
+      <ImageView fitHeight="91.0" fitWidth="86.0" layoutX="522.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Bamba-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BambaPBtn" layoutX="518.0" layoutY="201.0" mnemonicParsing="false" onAction="#ClickBambaPBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="+" />
+      <Button fx:id="BambaNBtn" layoutX="561.0" layoutY="201.0" mnemonicParsing="false" onAction="#ClickBambaNBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="-" />
+      <ImageView fitHeight="91.0" fitWidth="86.0" layoutX="620.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Klik-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="KlikPBtn1" layoutX="618.0" layoutY="201.0" mnemonicParsing="false" onAction="#ClickKlikPBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="+" />
+      <Button fx:id="KlikNBtn" layoutX="657.0" layoutY="201.0" mnemonicParsing="false" onAction="#ClickKlikNBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="-" />
+      <ImageView fitHeight="91.0" fitWidth="86.0" layoutX="742.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CocaCola-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="CocaColaPBtn" layoutX="728.0" layoutY="201.0" mnemonicParsing="false" onAction="#ClickCocaColaPBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="+" />
+      <Label fx:id="availablelbl" layoutX="563.0" layoutY="384.0" prefHeight="18.0" prefWidth="200.0" textFill="#b91919">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font></Label>
+      <Button fx:id="CocaColaBtn" layoutX="766.0" layoutY="201.0" mnemonicParsing="false" onAction="#ClickCocaColaNBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="-" />
+      <ImageView fitHeight="91.0" fitWidth="86.0" layoutX="583.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SevenUp-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="SevenUpPBtn" layoutX="572.0" layoutY="344.0" mnemonicParsing="false" onAction="#ClickSevenUpPBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="+" />
+      <Button fx:id="SevenUpNBtn" layoutX="608.0" layoutY="344.0" mnemonicParsing="false" onAction="#ClickSevenUpNBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="-" />
+      <ImageView fitHeight="91.0" fitWidth="91.0" layoutX="658.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@Katkatat-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="KatkatatPBtn" layoutX="668.0" layoutY="344.0" mnemonicParsing="false" onAction="#ClickKatkatatPBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="+" />
+      <Button fx:id="KatkatatNBtn" layoutX="709.0" layoutY="344.0" mnemonicParsing="false" onAction="#ClickKatkatatNBtn" prefHeight="26.0" prefWidth="26.0" stylesheets="@../common/buttons.CSS" text="-" />
+      <AnchorPane layoutX="-5.0" prefHeight="63.0" prefWidth="870.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fx:id="imgEK" fitHeight="91.0" fitWidth="64.0" layoutX="383.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgOL" fitHeight="86.0" fitWidth="64.0" layoutX="383.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="43.0" fitWidth="57.0" layoutX="805.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@viewOrderIcone.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

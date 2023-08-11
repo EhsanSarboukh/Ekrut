@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../common/buttons.CSS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.messageFromAreaManagerController">
+   <children>
+      <Button fx:id="BackBtn" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickBack" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Text layoutX="60.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Device ID:" wrappingWidth="163.20002441406245">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font></Text>
+      <TextField fx:id="txtID" layoutX="224.0" layoutY="322.0" promptText="ID device" style="-fx-border-color: #e77000;" />
+      <Button fx:id="ViewStockBtn" layoutX="480.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickViewStock" stylesheets="@../common/buttons.CSS" text="View Stock" />
+      <ComboBox fx:id="Area" layoutX="389.0" layoutY="322.0" onAction="#ChooseArea" prefHeight="25.0" prefWidth="77.0" promptText="Area" style="-fx-border-color: #e77000; -fx-font-family: georgia;" />
+      <TableView fx:id="tblArea" layoutX="3.0" layoutY="117.0" prefHeight="200.0" prefWidth="593.0" style="-fx-font-family: georgia;">
+        <columns>
+          <TableColumn fx:id="col_deviceId" prefWidth="64.0" text="deviceId" />
+          <TableColumn fx:id="col_bamba" prefWidth="68.0" text="Bamba" />
+            <TableColumn fx:id="col_klik" prefWidth="76.0" text="Klik" />
+            <TableColumn fx:id="col_cocaCola" prefWidth="71.0" text="CocaCola" />
+            <TableColumn fx:id="col_sevenUp" prefWidth="69.0" text="SevenUp" />
+            <TableColumn fx:id="col_katkatat" prefWidth="68.0" text="Katkatat" />
+            <TableColumn fx:id="col_location" prefWidth="77.0" text="location" />
+            <TableColumn fx:id="col_updateStock" prefWidth="107.0" text="Stoch Msg" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblIdProductMessage" layoutX="194.0" layoutY="362.0" prefHeight="18.0" prefWidth="235.0" style="-fx-font-family: georgia;" />
+      <AnchorPane layoutX="-4.0" layoutY="-4.0" prefHeight="73.0" prefWidth="608.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="78.0" layoutX="271.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#e77000" layoutX="171.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Stock Messages">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

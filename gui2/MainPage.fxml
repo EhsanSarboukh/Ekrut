@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 11111;" stylesheets="@../../common/buttons.CSS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainPageFormController">
+   <children>
+      <Button fx:id="btnLocalOrder" layoutX="166.0" layoutY="214.0" mnemonicParsing="false" onAction="#ClickBtnLocalOrder" stylesheets="@../common/buttons.CSS" text="Local order" />
+      <Button fx:id="btnRemoteOrderViaDrone" layoutX="287.0" layoutY="156.0" mnemonicParsing="false" onAction="#ClickRemoteOrderViaDrone" stylesheets="@../common/buttons.CSS" text="Remote order via drone " />
+      <Button fx:id="btnRemoteOrderPickUpOption" layoutX="134.0" layoutY="156.0" mnemonicParsing="false" onAction="#ClickRemoteOrderPickupOption" stylesheets="@../common/buttons.CSS" text="Remote order " />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#ClickBack" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Button fx:id="btnPickUpOrder" layoutX="300.0" layoutY="214.0" mnemonicParsing="false" onAction="#ClickBtnPickUpOrder" stylesheets="@../common/buttons.CSS" text="Pickup order">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.05263157933950424" green="0.0015594542492181063" blue="0.0015594542492181063" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+      <Text layoutX="318.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <AnchorPane layoutX="-5.0" layoutY="-1.0" prefHeight="90.0" prefWidth="608.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fx:id="imgEK" fitHeight="103.0" fitWidth="70.0" layoutX="256.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgOL" fitHeight="103.0" fitWidth="70.0" layoutX="256.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="105.0" fitWidth="428.0" layoutX="86.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@product.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e77000" layoutX="185.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To EKRUT">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

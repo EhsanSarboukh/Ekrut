@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ActivateSalesFormController">
+   <children>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#ClickBack" style="-fx-background-color: #e1cc8e;" stylesheets="@../common/buttons.CSS" text="Back" />
+      <TableView fx:id="tblSale" layoutX="50.0" layoutY="128.0" prefHeight="202.0" prefWidth="500.0" style="-fx-border-color: #e1cc8e; -fx-border-width: 3px;">
+        <columns>
+          <TableColumn fx:id="col_ProductName" prefWidth="156.79998779296875" style="-fx-font-family: Georgia;" text="productName" />
+            <TableColumn fx:id="col_Status" prefWidth="111.33331298828125" style="-fx-font-family: Georgia;" text="status" />
+            <TableColumn fx:id="col_Sale" prefWidth="108.66668701171875" style="-fx-font-family: Georgia;" text="sale" />
+            <TableColumn fx:id="col_Area" prefWidth="114.66668701171875" style="-fx-font-family: Georgia;" text="area" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnUpdate" layoutX="466.0" layoutY="337.0" mnemonicParsing="false" onAction="#ClickActivate" style="-fx-background-color: #e1cc8e;" stylesheets="@../common/buttons.CSS" text="Activate" />
+      <AnchorPane layoutY="-10.0" prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="59.0" layoutX="258.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Text fill="#e77000" layoutX="73.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Of Sales " textAlignment="CENTER" wrappingWidth="475.60003662109375">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

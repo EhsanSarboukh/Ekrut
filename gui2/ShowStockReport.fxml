@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../../../eclipse-workspace/G8.zip_expanded/G8_Prototype/src/common/buttons.CSS" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ShowStockReportController">
+   <children>
+      <Button fx:id="btnBack" layoutX="16.0" layoutY="357.0" mnemonicParsing="false" onAction="#ClickBack" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Text layoutX="249.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CocaCola" textAlignment="CENTER" wrappingWidth="84.13671875">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+      <Text layoutX="25.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bamba" textAlignment="CENTER" wrappingWidth="64.13671875">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+      <Text layoutX="133.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klik" textAlignment="CENTER" wrappingWidth="54.0">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+      <Text layoutX="376.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SevenUp" textAlignment="CENTER" wrappingWidth="96.13671875">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+      <Text layoutX="500.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Katkatat" textAlignment="CENTER" wrappingWidth="73.0">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Text>
+      <Text layoutX="89.0" layoutY="224.0" scaleX="2.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the most wanted products :" textAlignment="CENTER" wrappingWidth="151.220703125">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></Text>
+      <Label fx:id="Bambalbl" layoutX="40.0" layoutY="152.0" prefHeight="38.0" prefWidth="34.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="Kliklbl" layoutX="147.0" layoutY="152.0" prefHeight="38.0" prefWidth="34.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="CocaColalbl" layoutX="274.0" layoutY="145.0" prefHeight="38.0" prefWidth="34.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="SevenUplbl" layoutX="407.0" layoutY="145.0" prefHeight="38.0" prefWidth="34.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="Katkatatlbl" layoutX="519.0" layoutY="145.0" prefHeight="38.0" prefWidth="34.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="MostUpdatedlbl" layoutX="23.0" layoutY="246.0" prefHeight="101.0" prefWidth="274.0" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="productspiechart" layoutX="365.0" layoutY="214.0" prefHeight="165.0" prefWidth="213.0" />
+      <AnchorPane layoutX="-12.0" layoutY="-7.0" prefHeight="86.0" prefWidth="614.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="73.0" layoutX="274.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ol2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#e77000" layoutX="173.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Stock Report">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

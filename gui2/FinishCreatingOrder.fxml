@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FinishCreatingOrderController">
+   <children>
+      <Button fx:id="BackBtn" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#ClickBack" stylesheets="@../common/buttons.CSS" text="Back" />
+      <Label fx:id="msglbl" alignment="CENTER" layoutY="152.0" prefHeight="95.0" prefWidth="600.0" style="-fx-font-family: georgia;" textFill="#c12626">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="95.0" prefWidth="600.0" style="-fx-background-color: #e1cc8e;">
+         <children>
+            <ImageView fx:id="EKImg" fitHeight="95.0" fitWidth="87.0" layoutX="248.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="OLImg" fitHeight="95.0" fitWidth="87.0" layoutX="248.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ol2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

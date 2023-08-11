@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConnectToServerController">
+	<children>
+		<ImageView fitHeight="400.0" fitWidth="629.0" layoutX="200.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@serverlogo.png" />
+			</image>
+		</ImageView>
+		<Text layoutX="11.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Ip Address :">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></Text>
+		<TextField fx:id="txtIp" layoutX="150.0" layoutY="113.0" style="-fx-border-color: #e77000;" />
+		<Button fx:id="ConnectBtn" layoutX="37.0" layoutY="158.0" mnemonicParsing="false" onAction="#ClickConnectEK" prefHeight="26.0" prefWidth="141.0" stylesheets="@../common/buttons.CSS" text="Connect To EK">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font></Button>
+		<Button fx:id="ExitBtn" layoutX="22.0" layoutY="355.0" mnemonicParsing="false" onAction="#ClickExit" prefHeight="26.0" prefWidth="73.0" stylesheets="@../common/buttons.CSS" text="Exit">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font></Button>
+		<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+		<Text fill="#e77000" layoutX="75.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connect To Server">
+			<font>
+				<Font name="Georgia Bold" size="35.0" />
+			</font>
+		</Text>
+      <Button fx:id="olConnectBtn" layoutX="190.0" layoutY="157.0" mnemonicParsing="false" onAction="#ClickConnectOL" prefHeight="27.0" prefWidth="142.0" stylesheets="@../common/buttons.CSS" text="Connect To OL">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>
